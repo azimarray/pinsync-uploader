@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Science Sunnah Video Uploader</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --surface: #171a21;
+    --border: #262b35;
+    --text: #e6e8eb;
+    --muted: #9aa3b2;
+    --accent: #4f8cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  header .brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--text); }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin: 0 0 16px;
+    line-height: 1.2;
+  }
+  .lead {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 640px;
+    margin-bottom: 48px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 56px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+  }
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  section {
+    border-top: 1px solid var(--border);
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  section p {
+    color: var(--muted);
+    max-width: 640px;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">The Science Sunnah Video Uploader</div>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">Internal Tool</div>
+    <h1>Content scheduling and publishing, built for The Science Sunnah.</h1>
+    <p class="lead">
+      This is an internal tool created and owned by The Science Sunnah to manage,
+      schedule, and publish educational video content across our own social
+      accounts. It is not a public product and is not available for sign-up.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>What it does</h3>
+        <p>Takes a finished video from our internal library and publishes it to
+        our own connected social accounts using each platform's official API.</p>
+      </div>
+      <div class="card">
+        <h3>Who uses it</h3>
+        <p>Only The Science Sunnah's own team, acting on our own authorized
+        accounts. No external users or third-party data are involved.</p>
+      </div>
+      <div class="card">
+        <h3>How it connects</h3>
+        <p>Uses each platform's official OAuth login flow to request access to
+        our own accounts only — nothing is scraped or accessed without authorization.</p>
+      </div>
+    </div>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        This tool is owned and operated by The Science Sunnah.
+        For questions about this tool or its data practices, reach us at
+        <a href="mailto:azimshaikh.ae@gmail.com">azimshaikh.ae@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 The Science Sunnah. Internal tool. See the <a href="privacy.html">Privacy Policy</a>.
+  </footer>
+</body>
+</html>
